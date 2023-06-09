@@ -144,7 +144,9 @@ body{
 }
 
 .produto img:first-child {
-    height: 15vh;
+    height: 12vh;
+    margin: auto;
+    
 }
 
 .nomeProduto {
@@ -227,7 +229,7 @@ button:after {
 
 button:main,
 button:focus {
-    user-select: auto;
+    user-select: none;
 }
 
 button:hover:not(:disabled) {
@@ -240,5 +242,5 @@ button:active:after {
 }
 
 button:active {
-    padding-bottom: 2.4vh;
+    padding-bottom: 2vh;
 }
