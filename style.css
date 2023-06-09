@@ -158,7 +158,9 @@ body{
     left: 50%;
     transform: translate(-50%, 0%);
 }
-
+.botao{
+    user-select: none;
+}
 button {
     width: 4vh;
     height: 4vh;
@@ -187,7 +189,7 @@ button {
     padding: 3.2vh;
     /* text-align: center; */
     /* text-transform: uppercase; */
-    touch-action: manipulation;
+    /* touch-action: manipulation; */
     transition: filter .2s;
     user-select: none;
     -webkit-user-select: none;
