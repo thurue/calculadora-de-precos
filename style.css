@@ -1,0 +1,242 @@
+* {
+    margin: 0pc;
+    padding: 0px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+}
+body{
+    background-color: #13303b;
+}
+
+.flutuante {
+    height: 10%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 10vh auto;
+
+    /* text-align: center; */
+
+    position: fixed;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    gap: 1vw;
+    user-select: none;
+}
+
+.valor,
+.lixo {
+    border-radius: 4vh;
+    text-align: center;
+    height: 100%;
+}
+
+.valor {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.082);
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.lixo {
+    background-color: white;
+    backdrop-filter: blur(10px);
+    /* box-shadow: 0px 15px 30px 6px rgb(255, 0, 0); */
+    transition: all .2s;
+
+    text-align: center;
+
+}
+
+.lixo:hover {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 6px 3px #f33a21;
+    box-shadow: 0px 0px 17px #f34b21;
+    scale: 1.05;
+}
+
+.lixo:active {
+    scale: .9;
+}
+
+.icon {
+    width: 6vh;
+    fill: rgb(255, 0, 0);
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    transition: all .2s;
+}
+
+.lixo:hover .icon {
+    fill: rgb(255, 255, 255);
+}
+
+.texto {
+    /* background-color: beige; */
+    position: relative;
+}
+
+.preço {
+    /* background-color: beige; */
+    position: relative;
+}
+
+.texto p,
+.preço p {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+
+    transform: translate(0%, -50%);
+
+
+}
+
+.preço p {
+    padding: 2vh;
+    border-radius: 3vh;
+    border: solid .1vh rgba(0, 0, 0, 0.438);
+    background-color: rgba(255, 255, 255, 0.863);
+    font-size: 3vh;
+}
+
+.texto p {
+    font-size: 4vh;
+    user-select: none;
+}
+
+.lista {
+    /* margin-top: .5%; */
+    width: 95%;
+    /* height: 700px; */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    /* background-color: bisque; */
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 1vh;
+}
+
+.produto {
+    width: 100%;
+    height: 15vh;
+    border-radius: 4vh;
+    background-color: rgb(125, 151, 190);
+    box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.082);
+
+    display: grid;
+    grid-template-columns: 20% 35% 15% 15% 15%;
+
+}
+
+.produtoVazio {
+    width: 100%;
+    height: 20vh;
+    /* border-radius: 45px; */
+    background-color: rgba(255, 255, 255, 0);
+    /* box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.082); */
+
+}
+
+.produto img:first-child {
+    height: 15vh;
+}
+
+.nomeProduto {
+    font-size: 2vh;
+}
+
+.nomeProduto p {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+button {
+    width: 4vh;
+    height: 4vh;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    appearance: button;
+
+    /* background-color: #1b4355; */
+
+    border: solid transparent;
+    border-radius: 3vh;
+    border-width: 0 0 .5vh;
+    /* box-sizing: border-box; */
+    color: #FFFFFF;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* font-size: 15px; */
+    /* font-weight: 700; */
+    /* letter-spacing: .8px; */
+    /* line-height: 20px; */
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 3.2vh;
+    /* text-align: center; */
+    /* text-transform: uppercase; */
+    touch-action: manipulation;
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.mais{
+    background-color: #13303b;
+}
+.mais:after{
+    background-color: #34688b;
+}
+.menos{
+    background-color: #3b1313;
+}
+.menos:after{
+    background-color: #8b3434;
+}
+button:after {
+    background-clip: padding-box;
+    /* background-color: #1CB0F6; */
+    border: solid transparent;
+    border-radius: 3vh;
+    border-width: 0 0 .5vh;
+    bottom: -.3vh;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+button:main,
+button:focus {
+    user-select: auto;
+}
+
+button:hover:not(:disabled) {
+    filter: brightness(1.5);
+}
+
+
+button:active:after {
+    border-width: 0 0 0vh;
+}
+
+button:active {
+    padding-bottom: 2.4vh;
+}
