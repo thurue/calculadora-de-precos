@@ -34,8 +34,8 @@ body{
 .valor {
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.082);
-    display: grid;
-    grid-template-columns: 70% 30%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .lixo {
@@ -103,7 +103,7 @@ body{
 }
 
 .texto p {
-    font-size: 4vh;
+    font-size: 3vh;
     user-select: none;
 }
 
@@ -123,15 +123,17 @@ body{
 }
 
 .produto {
-    width: 100%;
+    width: 95%;
     height: 15vh;
-    border-radius: 4vh;
+    padding: 2vh;
+    border-radius: 5vh;
     background-color: rgb(125, 151, 190);
     box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.082);
 
-    display: grid;
-    grid-template-columns: 20% 35% 15% 15% 15%;
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2vh;
 }
 
 .produtoVazio {
@@ -144,13 +146,13 @@ body{
 }
 
 .produto img:first-child {
-    height: 12vh;
-    margin: auto;
-    
+    height: 10vh;
 }
 
-.nomeProduto {
+.nomeProduto, .Unidades {
     font-size: 2vh;
+    width: 5vh;
+    /* flex-grow: 1; */
 }
 
 .nomeProduto p {
@@ -160,38 +162,36 @@ body{
     left: 50%;
     transform: translate(-50%, 0%);
 }
-.botao{
-    user-select: none;
+.nomeProduto{
+    flex-grow: 1;
 }
-button {
-    width: 4vh;
-    height: 4vh;
+.Unidades p{
+    text-align: center;
     position: relative;
-    left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    appearance: button;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
 
-    /* background-color: #1b4355; */
-
+button {
+    /* scale: .5; */
+    width: 3vh;
+    height: 3vh;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, 0%);
     border: solid transparent;
     border-radius: 3vh;
     border-width: 0 0 .5vh;
-    /* box-sizing: border-box; */
+
     color: #FFFFFF;
     cursor: pointer;
-    /* display: inline-block; */
-    /* font-size: 15px; */
-    /* font-weight: 700; */
-    /* letter-spacing: .8px; */
-    /* line-height: 20px; */
     margin: 0;
     outline: none;
     overflow: visible;
-    padding: 3.2vh;
-    /* text-align: center; */
-    /* text-transform: uppercase; */
-    /* touch-action: manipulation; */
+    padding: 2.2vh;
+    touch-action: manipulation;
     transition: filter .2s;
     user-select: none;
     -webkit-user-select: none;
@@ -214,7 +214,6 @@ button {
 }
 button:after {
     background-clip: padding-box;
-    /* background-color: #1CB0F6; */
     border: solid transparent;
     border-radius: 3vh;
     border-width: 0 0 .5vh;
@@ -229,7 +228,7 @@ button:after {
 
 button:main,
 button:focus {
-    user-select: none;
+    user-select: auto;
 }
 
 button:hover:not(:disabled) {
@@ -242,5 +241,5 @@ button:active:after {
 }
 
 button:active {
-    padding-bottom: 2vh;
+    padding-bottom: 2.4vh;
 }
