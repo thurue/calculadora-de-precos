@@ -103,7 +103,7 @@ body{
 }
 
 .texto p {
-    font-size: 3vh;
+    font-size:3vh;
     user-select: none;
 }
 
@@ -156,6 +156,7 @@ body{
 }
 
 .nomeProduto p {
+    font-size: 1.5vh;
     text-align: center;
     position: relative;
     top: 50%;
@@ -192,12 +193,12 @@ button {
     overflow: visible;
     padding: 2.2vh;
     touch-action: manipulation;
-    transition: filter .2s;
     user-select: none;
     -webkit-user-select: none;
     white-space: nowrap;
     vertical-align: middle;
     text-align: center;
+    transition: filter .2s;
 }
 
 .mais{
