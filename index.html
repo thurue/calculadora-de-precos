@@ -16,8 +16,22 @@
     </header>
     <article>
         <div class="lista">
+
             <div class="produto">
-                <img src="./images/coca.png" alt="">
+                <img src="./images/agua.png" alt="">
+                <div class="nomeProduto">
+                    <p>Água</p>
+                </div>
+                <button onclick="Maagua()" class="botao mais"></button>
+                <div class="Unidades">
+                    <p id="quantidadeAgua">0</p>
+                </div>
+                <button onclick="Meagua()" class="botao menos"></button>
+            </div>
+
+
+            <div class="produto">
+                <img src="./images/refri.png" alt="">
                 <div class="nomeProduto">
                     <p>Refrigerante</p>
                 </div>
@@ -27,26 +41,94 @@
                 </div>
                 <button onclick="Merefri()" class="botao menos"></button>
             </div>
-            <div class="produto"></div>
-            <div class="produto"></div>
-            <div class="produto"></div>
-            <div class="produto"></div>
-            <div class="produto"></div>
-            <div class="produto"></div>
-            <div class="produto"></div>
-            <div class="produto"></div>
-            <div class="produto"></div>
-            <div class="produto"></div>
+
+
+            <div class="produto">
+                <img src="./images/w.png" alt="">
+                <div class="nomeProduto">
+                    <p>Cerveja</p>
+                </div>
+                <button onclick="Macerveja()" class="botao mais"></button>
+                <div class="Unidades">
+                    <p id="quantidadeCerveja">0</p>
+                </div>
+                <button onclick="Mecerveja()" class="botao menos"></button>
+            </div>
+
+
+            <div class="produto">
+                <img src="./images/vinho.png" alt="">
+                <div class="nomeProduto">
+                    <p>Vinho Quente</p>
+                </div>
+                <button onclick="Mavinho()" class="botao mais"></button>
+                <div class="Unidades">
+                    <p id="quantidadeVinho">0</p>
+                </div>
+                <button onclick="Mevinho()" class="botao menos"></button>
+            </div>
+
+            <div class="produto">
+                <img src="./images/Quentao.png" alt="">
+                <div class="nomeProduto">
+                    <p>Quentão</p>
+                </div>
+                <button onclick="Maquentao()" class="botao mais"></button>
+                <div class="Unidades">
+                    <p id="quantidadeQuentao">0</p>
+                </div>
+                <button onclick="Mequentao()" class="botao menos"></button>
+            </div>
+
+
+            <div class="produto">
+                <img src="./images/batata.png" alt="">
+                <div class="nomeProduto">
+                    <p>Batata frita</p>
+                </div>
+                <button onclick="Mabatata()" class="botao mais"></button>
+                <div class="Unidades">
+                    <p id="quantidadeBatata">0</p>
+                </div>
+                <button onclick="Mebatata()" class="botao menos"></button>
+            </div>
+
+            <div class="produto">
+                <img src="./images/hotdog.png" alt="">
+                <div class="nomeProduto">
+                    <p>Hotdog</p>
+                </div>
+                <button onclick="Mahotdog()" class="botao mais"></button>
+                <div class="Unidades">
+                    <p id="quantidadeHotdog">0</p>
+                </div>
+                <button onclick="Mehotdog()" class="botao menos"></button>
+            </div>
+
+            <div class="produto">
+                <img src="./images/pastel.png" alt="">
+                <div class="nomeProduto">
+                    <p>Pastel</p>
+                </div>
+                <button onclick="Mapastel()" class="botao mais"></button>
+                <div class="Unidades">
+                    <p id="quantidadePastel">0</p>
+                </div>
+                <button onclick="Mepastel()" class="botao menos"></button>
+            </div>
+
+
             <div class="produtoVazio"></div>
         </div>
     </article>
-    
+
     <div class="flutuante">
-        
-        <div onclick="DelAll()" class="lixo"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFFFFF">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
-        </svg></div>
+
+        <div onclick="DelAll()" class="lixo"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="#FFFFFF">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+            </svg></div>
         <div class="valor">
             <div class="texto">
                 <p>Valor total:</p>
@@ -54,7 +136,7 @@
             <div class="preço">
                 <p id="ValorTotal">0,0</p>
             </div>
-            
+
         </div>
     </div>
     <script src="script.js"></script>
