@@ -139,7 +139,7 @@ function Mehotdog() {
 function Mapastel() {
     Qpastel++
     Pastel.innerText = Qpastel
-    Valortotal.innerText = parseFloat(Valortotal.innerText) + 7
+    Valortotal.innerText = parseFloat(Valortotal.innerText) + 8
 }
 function Mepastel() {
     if (Qpastel <= 0) {
@@ -148,7 +148,7 @@ function Mepastel() {
     else {
         Qpastel--
         Pastel.innerText = Qpastel
-        Valortotal.innerText = parseFloat(Valortotal.innerText) - 7
+        Valortotal.innerText = parseFloat(Valortotal.innerText) - 8
     }
 }
 
