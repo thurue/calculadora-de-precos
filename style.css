@@ -1,19 +1,32 @@
 * {
     margin: 0pc;
     padding: 0px;
-    font-family: 'poppins', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 body {
-    background-color: #ffdd00;
+    /* background-color: #ffffff; */
+    background-image: url(./images/patternpad.png);
+    background-size: 200vw;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #ff7c5b;
+    margin-bottom: 3vh;
+
+    border-radius: 0vh 0vh 6vh 6vh;
 }
 
 .flutuante {
     height: 10%;
     width: 90%;
     display: grid;
-    grid-template-columns: 10vh auto;
+    grid-template-columns: auto 10vh;
 
     /* text-align: center; */
 
@@ -30,11 +43,11 @@ body {
     border-radius: 4vh;
     text-align: center;
     height: 100%;
+    box-shadow: .5vh .5vh 1.5vh rgba(0, 0, 0, 0.382);
 }
 
 .valor {
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.082);
     display: flex;
     justify-content: space-evenly;
 }
@@ -120,7 +133,7 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    gap: 1vh;
+    gap: 1.2vh;
 }
 
 .produto {
@@ -128,8 +141,9 @@ body {
     height: 15vh;
     padding: 2vh;
     border-radius: 5vh;
-    background-color: rgb(255, 91, 91);
-    box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.082);
+    background-color: rgba(255, 222, 91, .6);
+    backdrop-filter: blur(.3vh);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.282);
 
     display: flex;
     justify-content: space-around;
@@ -147,7 +161,7 @@ body {
 }
 
 .produto img:first-child {
-    height: 10vh;
+    height: 7vh;
 }
 
 .nomeProduto,
@@ -158,7 +172,7 @@ body {
 }
 
 .nomeProduto p {
-    font-size: 1.5vh;
+    font-size: 3vh;
     text-align: center;
     position: relative;
     top: 50%;
@@ -171,6 +185,8 @@ body {
 }
 
 .Unidades p {
+
+    font-size: 4vh;
     text-align: center;
     position: relative;
     top: 50%;
@@ -180,8 +196,8 @@ body {
 
 button {
     /* scale: .5; */
-    width: 3vh;
-    height: 3vh;
+    width: 5vh;
+    height: 13vh;
     position: relative;
     left: 0%;
     top: 0%;
@@ -211,6 +227,10 @@ button {
 
 .mais:after {
     background-color: #34688b;
+    background-image: url(./images/mais.png);
+    background-position: center;
+    background-size: 2.5vh;
+    background-repeat: no-repeat;
 }
 
 .menos {
@@ -219,6 +239,10 @@ button {
 
 .menos:after {
     background-color: #8b3434;
+    background-image: url(./images/menos.png);
+    background-position: center;
+    background-size: 2.5vh;
+    background-repeat: no-repeat;
 }
 
 button:after {
@@ -233,6 +257,7 @@ button:after {
     right: 0;
     top: 0;
     z-index: -1;
+    transition: .2s;
 }
 
 button:main,
@@ -247,6 +272,7 @@ button:hover:not(:disabled) {
 
 button:active:after {
     border-width: 0 0 0vh;
+
 }
 
 button:active {

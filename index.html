@@ -9,8 +9,11 @@
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap" rel="stylesheet">
 <body>
     <header>
     </header>
@@ -18,15 +21,17 @@
         <div class="lista">
 
             <div class="produto">
-                <img src="./images/agua.png" alt="">
+                <div>
+                    <img src="./images/agua.png" alt="">
+                </div>
                 <div class="nomeProduto">
                     <p>Água</p>
                 </div>
-                <button onclick="Maagua()" class="botao mais"></button>
+                <button onclick="Meagua()" class="botao menos"></button>
                 <div class="Unidades">
                     <p id="quantidadeAgua">0</p>
                 </div>
-                <button onclick="Meagua()" class="botao menos"></button>
+                <button onclick="Maagua()" class="botao mais"></button>
             </div>
 
 
@@ -35,11 +40,11 @@
                 <div class="nomeProduto">
                     <p>Refrigerante</p>
                 </div>
-                <button onclick="Marefri()" class="botao mais"></button>
+                <button onclick="Merefri()" class="botao menos"></button>
                 <div class="Unidades">
                     <p id="quantidadeRefri">0</p>
                 </div>
-                <button onclick="Merefri()" class="botao menos"></button>
+                <button onclick="Marefri()" class="botao mais"></button>
             </div>
 
 
@@ -48,11 +53,11 @@
                 <div class="nomeProduto">
                     <p>Cerveja</p>
                 </div>
-                <button onclick="Macerveja()" class="botao mais"></button>
+                <button onclick="Mecerveja()" class="botao menos"></button>
                 <div class="Unidades">
                     <p id="quantidadeCerveja">0</p>
                 </div>
-                <button onclick="Mecerveja()" class="botao menos"></button>
+                <button onclick="Macerveja()" class="botao mais"></button>
             </div>
 
 
@@ -61,11 +66,11 @@
                 <div class="nomeProduto">
                     <p>Vinho Quente</p>
                 </div>
-                <button onclick="Mavinho()" class="botao mais"></button>
+                <button onclick="Mevinho()" class="botao menos"></button>
                 <div class="Unidades">
                     <p id="quantidadeVinho">0</p>
                 </div>
-                <button onclick="Mevinho()" class="botao menos"></button>
+                <button onclick="Mavinho()" class="botao mais"></button>
             </div>
 
             <div class="produto">
@@ -73,11 +78,11 @@
                 <div class="nomeProduto">
                     <p>Quentão</p>
                 </div>
-                <button onclick="Maquentao()" class="botao mais"></button>
+                <button onclick="Mequentao()" class="botao menos"></button>
                 <div class="Unidades">
                     <p id="quantidadeQuentao">0</p>
                 </div>
-                <button onclick="Mequentao()" class="botao menos"></button>
+                <button onclick="Maquentao()" class="botao mais"></button>
             </div>
 
 
@@ -86,11 +91,11 @@
                 <div class="nomeProduto">
                     <p>Batata frita</p>
                 </div>
-                <button onclick="Mabatata()" class="botao mais"></button>
+                <button onclick="Mebatata()" class="botao menos"></button>
                 <div class="Unidades">
                     <p id="quantidadeBatata">0</p>
                 </div>
-                <button onclick="Mebatata()" class="botao menos"></button>
+                <button onclick="Mabatata()" class="botao mais"></button>
             </div>
 
             <div class="produto">
@@ -98,11 +103,11 @@
                 <div class="nomeProduto">
                     <p>Hotdog</p>
                 </div>
-                <button onclick="Mahotdog()" class="botao mais"></button>
+                <button onclick="Mehotdog()" class="botao menos"></button>
                 <div class="Unidades">
                     <p id="quantidadeHotdog">0</p>
                 </div>
-                <button onclick="Mehotdog()" class="botao menos"></button>
+                <button onclick="Mahotdog()" class="botao mais"></button>
             </div>
 
             <div class="produto">
@@ -110,11 +115,35 @@
                 <div class="nomeProduto">
                     <p>Pastel</p>
                 </div>
-                <button onclick="Mapastel()" class="botao mais"></button>
+                <button onclick="Mepastel()" class="botao menos"></button>
                 <div class="Unidades">
                     <p id="quantidadePastel">0</p>
                 </div>
-                <button onclick="Mepastel()" class="botao menos"></button>
+                <button onclick="Mapastel()" class="botao mais"></button>
+            </div>
+
+            <div class="produto">
+                <img src="./images/doce1.png" alt="">
+                <div class="nomeProduto">
+                    <p>Doce¹</p>
+                </div>
+                <button onclick="Medoce1()" class="botao menos"></button>
+                <div class="Unidades">
+                    <p id="quantidadeDoce1">0</p>
+                </div>
+                <button onclick="Madoce1()" class="botao mais"></button>
+            </div>
+
+            <div class="produto">
+                <img src="./images/doce2.png" alt="">
+                <div class="nomeProduto">
+                    <p>Doce²</p>
+                </div>
+                <button onclick="Medoce2()" class="botao menos"></button>
+                <div class="Unidades">
+                    <p id="quantidadeDoce2">0</p>
+                </div>
+                <button onclick="Madoce2()" class="botao mais"></button>
             </div>
 
 
@@ -124,11 +153,6 @@
 
     <div class="flutuante">
 
-        <div onclick="DelAll()" class="lixo"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                fill="#FFFFFF">
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
-            </svg></div>
         <div class="valor">
             <div class="texto">
                 <p>Valor total:</p>
@@ -138,6 +162,11 @@
             </div>
 
         </div>
+        <div onclick="DelAll()" class="lixo"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="#FFFFFF">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+            </svg></div>
     </div>
     <script src="script.js"></script>
 </body>
