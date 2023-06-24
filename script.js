@@ -30,6 +30,12 @@ var Doce1 = document.getElementById("quantidadeDoce1")
 var Qdoce2 = 0
 var Doce2 = document.getElementById("quantidadeDoce2")
 
+var Qmilho = 0
+var Milho = document.getElementById("quantidadeMilho")
+
+var Qbrinquedo = 0
+var Brinquedo = document.getElementById("quantidadeBrinquedo")
+
 
 function Maagua() {
     Qagua++
@@ -191,38 +197,76 @@ function Medoce2() {
     }
 }
 
+function Mamilho() {
+    Qmilho++
+    Milho.innerText = Qmilho
+    Valortotal.innerText = parseFloat(Valortotal.innerText) + 10
+}
+function Memilho() {
+    if (Qmilho <= 0) {
+        Qmilho = 0
+    }
+    else {
+        Qmilho--
+        Milho.innerText = Qmilho
+        Valortotal.innerText = parseFloat(Valortotal.innerText) - 10
+    }
+}
+
+function Mabrinquedo() {
+    Qbrinquedo++
+    Brinquedo.innerText = Qbrinquedo
+    Valortotal.innerText = parseFloat(Valortotal.innerText) + 20
+}
+function Mebrinquedo() {
+    if (Qbrinquedo <= 0) {
+        Qbrinquedo = 0
+    }
+    else {
+        Qbrinquedo--
+        Brinquedo.innerText = Qbrinquedo
+        Valortotal.innerText = parseFloat(Valortotal.innerText) - 20
+    }
+}
+
 function DelAll() {
     Valortotal.innerText = 0
     Qagua = 0
     Agua.innerText = 0
-    
+
     QRefri = 0
     Coca.innerText = 0
-    
+
     Qcerveja = 0
     Cerveja.innerText = 0
-    
+
     Qvinho = 0
     Vinho.innerText = 0
-    
+
     Qquentao = 0
     Quentao.innerText = 0
-    
+
     Qbatata = 0
     Batata.innerText = 0
-    
+
     Qhotdog = 0
     Hotdog.innerText = 0
-    
+
     Qpastel = 0
     Pastel.innerText = 0
 
     Qdoce1 = 0
     Doce1.innerText = 0
-    
+
     Qdoce2 = 0
     Doce2.innerText = 0
-   
-    
+
+    Qmilho = 0
+    Milho.innerText = 0
+
+    Qbrinquedo = 0
+    Brinquedo.innerText = 0
+
+
 }
 
