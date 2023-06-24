@@ -40,7 +40,7 @@ var Brinquedo = document.getElementById("quantidadeBrinquedo")
 function Maagua() {
     Qagua++
     Agua.innerText = Qagua
-    Valortotal.innerText = parseFloat(Valortotal.innerText) + 5
+    Valortotal.innerText = parseFloat(Valortotal.innerText) + 3
 }
 function Meagua() {
     if (Qagua <= 0) {
@@ -49,14 +49,14 @@ function Meagua() {
     else {
         Qagua--
         Agua.innerText = Qagua
-        Valortotal.innerText = parseFloat(Valortotal.innerText) - 5
+        Valortotal.innerText = parseFloat(Valortotal.innerText) - 3
     }
 }
 
 function Marefri() {
     QRefri++
     Coca.innerText = QRefri
-    Valortotal.innerText = parseFloat(Valortotal.innerText) + 8
+    Valortotal.innerText = parseFloat(Valortotal.innerText) + 5
 }
 function Merefri() {
     if (QRefri <= 0) {
@@ -65,14 +65,14 @@ function Merefri() {
     else {
         QRefri--
         Coca.innerText = QRefri
-        Valortotal.innerText = parseFloat(Valortotal.innerText) - 8
+        Valortotal.innerText = parseFloat(Valortotal.innerText) - 5
     }
 }
 
 function Macerveja() {
     Qcerveja++
     Cerveja.innerText = Qcerveja
-    Valortotal.innerText = parseFloat(Valortotal.innerText) + 8
+    Valortotal.innerText = parseFloat(Valortotal.innerText) + 5
 }
 function Mecerveja() {
     if (Qcerveja <= 0) {
@@ -81,7 +81,7 @@ function Mecerveja() {
     else {
         Qcerveja--
         Cerveja.innerText = Qcerveja
-        Valortotal.innerText = parseFloat(Valortotal.innerText) - 8
+        Valortotal.innerText = parseFloat(Valortotal.innerText) - 5
     }
 }
 
